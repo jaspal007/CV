@@ -4,32 +4,67 @@
 <head>
   <meta charset="utf-8">
   <title>My personal site</title>
-</head>
-<style>
-  .nav a:hover{
-    background-color: lightgreen;
-    color: red;
-    font-size: 20px;
-    padding: 50px 10px;
-  }
-</style>
+  <style>
+    .nav a {
+      color: #1572A1;
+    }
 
-<body id="top" bgcolor="#e6f3ff">
-  <nav class="nav">
-    <table>
-      <tr>
-        <td width="1900">
-          <a href="#bottom"> bottom of the webpage</a>
-        </td>
-        <td width="1800">
-          <a href="contact_info.html" target="_blank"> Contact me</a>
-        </td>
-        <td width="400">
-          <a href="forms.html" target="_blank"> Tell about yourself</a>
-        </td>
-      </tr>
-    </table>
-  </nav>
+    .nav a:hover {
+      background-color: #886F6F;
+      color: #FDFCE5;
+      font-size: 40px;
+      padding: 2px;
+    }
+
+    .footer li {
+      padding-left: 90px;
+      padding-right: 120px;
+      padding-bottom: 20px;
+      display: inline;
+    }
+
+    .footer a {
+      color: #1572A1;
+    }
+
+    .footer a:hover {
+      background-color: #886F6F;
+      color: #FDFCE5;
+      font-size: 20px;
+      padding: 2px;
+    }
+
+    /*.footer ul{
+    width: px
+  }*/
+  hr{
+    border-style: dotted none none;
+    border-width: 10px;
+    height: 1px;
+    width: 10%;
+    border-color: #F4DFBA;
+  }
+  </style>
+</head>
+
+<body id="top" style="background-color:#FDFCE5">
+  <header>
+    <nav class="nav">
+      <table>
+        <tr>
+          <td width="1900">
+            <a href="#bottom"> Bottom of the webpage</a>
+          </td>
+          <td width="1800">
+            <a href="contact_info.html" target="_blank"> Contact me</a>
+          </td>
+          <td width="400">
+            <a href="forms.html" target="_blank"> Tell about yourself</a>
+          </td>
+        </tr>
+      </table>
+    </nav>
+  </header>
   <table cellspacing="20" border="0">
     <tr>
       <td rowspan="3">
@@ -81,7 +116,7 @@
   <hr>
   <h3>Chronology</h3>
   <!--Chronology-->
-  <table border="2">
+  <table border="2" style="border-collapse: collapse;">
     <thead>
       <tr>
         <th>Years</th>
@@ -105,7 +140,7 @@
   <table cellspacing="10">
     <tr>
       <td>
-        <table cellspacing="5" border="1">
+        <table cellspacing="5" border="1" >
           <tr>
             <td>C++</td>
             <td>⭐⭐⭐⭐</td>
@@ -141,13 +176,20 @@
     <li type="a">Netflix</li>
     for printing the different style for specific list item
     -->
-  </ol>
-  <a href="contact_info.html" target="_blank" style="color:green">Contact me</a>
-  <!--CSS style attributeis used to change the color of the hyperlink-->
-  <br>
-  <a id="bottom" href="#top" style="color:red">Go to the top of the webpage</a>
-  <br>
-  <a href="forms.html" target="_blank">Please update your information here</a>
+  </ol><br><br>
+  <footer class="footer">
+    <ul>
+      <li>
+        <a href="contact_info.html" target="_blank">Contact me</a>
+      </li>
+      <li>
+        <a href="forms.html" target="_blank">Please update your information here</a>
+      </li>
+      <li>
+        <a id="bottom" href="#top">Go to the top of the webpage</a>
+      </li>
+    </ul>
+  </footer>
 </body>
 
 </html>
